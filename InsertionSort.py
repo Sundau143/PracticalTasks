@@ -4,8 +4,7 @@
 listOfNumbers = [31, 40, 22, 50, 53, 68, 97, 12, 15]
 
 # list is printed in console without any changes
-print("List before SelectionSort: ")
-print(listOfNumbers)
+print("List before InsertionSort: \n", listOfNumbers, sep='')
 
 # variable "listLength" equals the length of a previously created list
 listLength = len(listOfNumbers)
@@ -28,5 +27,4 @@ for i in range(1, listLength):
         listOfNumbers[j + 1] = insertedElement
 
 # list is printed in console after it being sorted
-print("List after SelectionSort: ")
-print(listOfNumbers)
+print("List after InsertionSort: \n", listOfNumbers, sep='')
