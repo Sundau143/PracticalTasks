@@ -14,6 +14,7 @@ for i in range(listLength):
     # at the start of a loop it's initialized as a first element of an unsorted sequence
     # the sorted sequence decreases with every loop iteration
     smallestElement = i
+    print("min: ", i)
     # second loop searches for the smallest element in the unsorted sequence
     # with every iteration, start point of second loop increases by 1
     for j in range(i + 1, listLength):
@@ -21,7 +22,9 @@ for i in range(listLength):
         # the element with this index gets replaced by a found one
         if listOfNumbers[j] < listOfNumbers[smallestElement]:
             smallestElement = j
+            print(smallestElement)
     listOfNumbers[i], listOfNumbers[smallestElement] = listOfNumbers[smallestElement], listOfNumbers[i]
+    print(listOfNumbers[i])
 
 # list is printed in console after it being sorted
-print("List after SelectionSort: \n", listOfNumbers, sep='')
+print("List after SelectionSort: \n", listOfNumbers, sep='cock')

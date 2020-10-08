@@ -13,10 +13,12 @@ listLength = len(listOfNumbers)
 # there are two cycles, which are checking the list at the same time
 for i in range(0, listLength):
     for j in range(0, listLength - 1):
+
         # if a previous element is bigger than the next
         if listOfNumbers[j] > listOfNumbers[j + 1]:
             # the previous and next elements get replaced
             listOfNumbers[j], listOfNumbers[j + 1] = listOfNumbers[j + 1], listOfNumbers[j]
+
 
 # list is printed in console after it being sorted
 print("List after BubbleSort:\n", listOfNumbers, sep='')
